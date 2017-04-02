@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundnouvautre">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:id="@+id/cheminLayout">
+
+        <TextView
+            style="@style/cheminStyle"
+            android:text="Accueil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cheminAccueil" />
+        <TextView
+            style="@style/cheminStyle"
+            android:text=">Mon espace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cheminMonEspace" />
+        <TextView
+            style="@style/cheminStyle"
+            android:text=">Mes vols"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cheminMeseVols" />
+        <TextView
+            style="@style/cheminStyle"
+            android:text=">Modifier le vol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cheminModifierVol" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/titreLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cheminLayout"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:text="Modifier "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/titleStyle"/>
+
+        <TextView
+            android:text="nom Aeronef"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtNonAeronef"
+            style="@style/titleStyleColor"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+        <TextView
+            android:id="@+id/txtTypeStatic"
+            style="@style/categorieModif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Type :"/>
+        <Spinner
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerType"
+            android:textColor="@color/textColorTertiary"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/txtAcquisitionStatic"
+            style="@style/categorieModif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date d'acquisition : "
+            android:layout_gravity="center_horizontal"/>
+        <EditText
+            android:id="@+id/txtAcquisition"
+            android:textSize="18sp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:text=""/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/txtEnvergureStatic"
+            style="@style/categorie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Envergure : "/>
+        <TextView
+            android:id="@+id/txtEnvergure"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/txtPoidsStatic"
+            style="@style/categorie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Poids : "/>
+        <TextView
+            android:id="@+id/txtPoids"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/txtRemarquesStatic"
+            style="@style/categorie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remarques : "/>
+        <TextView
+            android:id="@+id/txtRemarques"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>
+
+</LinearLayout>
